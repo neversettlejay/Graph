@@ -11,7 +11,7 @@ class CourseSchedule2DFS:
 
         # output list to return the order in which course should be taken considering the prerequisites of individual course.
         output=[]
-        visited, hasCycle=set(), set()
+        visited, hasCycle=set(), set() #defined outside function to keep the courseNumber for different stages of recursion.
 
         #depthFirstSerch method is created inside the function so that the new declaration of the above variables isn't needed and would be already accessible within this function.
         def depthFirstSerch(courseNumber):
